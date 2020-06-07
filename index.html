@@ -7,8 +7,8 @@
 </head>
 <body>
 	<header class="header">
-		<a href="#">
-			<img class="logo" src="img/logo.png" alt="Logo">
+		<a class="logo" href="#">
+			<img class="logo__img" src="img/logo.png" alt="Logo">
 		</a>
 		<nav class="header-nav">
 			<ul class="header-nav-list">
@@ -18,8 +18,10 @@
 			</ul>
 		</nav>
 		<ul class="header-nav-list">
-			<li class="header-nav__item"><img class="header__search" src="img/icon-search.svg" alt="Search"></li>
-			<li class="header-nav__item"><a class="button" href="#">Contact Us</a></li>
+			<li class="header-nav__item">
+				<button class="button-search"><img class="header__search" src="img/icon-search.svg" alt="Search"></button>
+			</li>
+			<li class="header-nav__item"><a class="header-nav__link" href="#">Contact Us</a></li>
 		</ul>
 	</header>
 	<main>
@@ -58,8 +60,8 @@
 					</a>
 				</li>
 			</ul>
-			<button class="arrow-left"><img class="arrow-img" src="img/arrow-left.png" alt="Toggle Left"></button>
-			<button class="arrow-right"><img class="arrow-img" src="img/arrow-right.png" alt="Toggle Right"></button>
+			<button class="arrow arrow--left"><img class="arrow-img" src="img/arrow-left.png" alt="Toggle Left"></button>
+			<button class="arrow arrow--right"><img class="arrow-img" src="img/arrow-right.png" alt="Toggle Right"></button>
 			<p class="category__text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
 		</section>
 		<section class="delivery">
@@ -144,7 +146,7 @@
 		</section>
 		<section class="connect">
 			<h2 class="title-small">Connect</h2>
-			<form action="">
+			<form action="#">
 				<!-- Тут будет форма -->
 			</form>
 			<ul class="social-list">
