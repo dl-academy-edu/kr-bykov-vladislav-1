@@ -31,7 +31,75 @@
 				<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/index.html">Home</a></li>
 				<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/pages/category/index.html">Catalog</a></li>
 				<li class="breadcrumbs__item">Toys</li>
-			</ul>	
+			</ul>
+		</section>
+		<form class="filter-form" action="#">
+			<fieldset class="filter-form__field">
+				<legend class="filter-form__legend">Cost</legend>
+				<input class="filter-form__range" type="range" name="cost" min="0" max="500" value="0" step="1">
+			</fieldset>	
+			<fieldset class="filter-form__field">
+				<legend class="filter-form__legend">Color</legend>
+				<ul class="filter-form__list">
+					<li class="filter-form__item">
+						<label class="filter-form__label">
+							<input class="filter-form__checkbox" type="checkbox" name="color" value="black">Black
+						</label>
+					</li>
+					<li class="filter-form__item">
+						<label class="filter-form__label">
+							<input class="filter-form__checkbox" type="checkbox" name="color" value="blue">Blue
+						</label>
+					</li>
+					<li class="filter-form__item">
+						<label class="filter-form__label">
+							<input class="filter-form__checkbox" type="checkbox" name="color" value="green">Green
+						</label>
+					</li>
+					<li class="filter-form__item">
+						<label class="filter-form__label">
+							<input class="filter-form__checkbox" type="checkbox" name="color" value="white">White
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="filter-form__field">
+				<legend class="filter-form__legend">Delivery</legend>
+				<ul class="filter-form__list">
+					<li class="filter-form__item">
+						<label class="filter-form__label">
+							<input class="filter-form__radio" type="radio" name="delivery" value="free">Free shipping
+						</label>
+					</li>
+					<li class="filter-form__item">
+						<label class="filter-form__label">
+							<input class="filter-form__radio" type="radio" name="delivery" value="fast">Fast shipping
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="filter-form__field">
+				<legend class="filter-form__legend">Amount</legend>
+				<ul class="filter-form__list">
+					<li class="filter-form__item">
+						<label class="filter-form__label">
+							<input class="filter-form__choice" type="radio" name="amount" value="0-5">0-5
+						</label>
+					</li>
+					<li class="filter-form__item">
+						<label class="filter-form__label">
+							<input class="filter-form__choice" type="radio" name="amount" value="10-20">10-20
+						</label>
+					</li>
+					<li class="filter-form__item">
+						<label class="filter-form__label">
+							<input class="filter-form__choice" type="radio" name="amount" value="20-50">20-50
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<button class="button" type="submit">Apply</button>
+		</form>
 	</main>
 	<footer class="footer">
 		<section class="footer-nav">
