@@ -101,6 +101,8 @@
 	background-color: rgba(112, 187, 220, .2);
 }
 
+/* widget */
+
 .widget {
 	background-color: #e1f0f7;
 }
@@ -112,6 +114,8 @@
 	font-style: italic;
 	line-height: 32px;
 }
+
+/* map */
 
 .map {
 	background-color: #e1f0f7;
