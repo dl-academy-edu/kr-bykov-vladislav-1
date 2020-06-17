@@ -76,6 +76,10 @@
 	cursor: pointer;
 }
 
+.arrow-img {
+	opacity: 1;
+}
+
 .arrow--right .arrow-img {
 	transform: rotate(180deg);
 }
