@@ -72,6 +72,8 @@
 .arrow {
 	background-color:rgba(112, 187, 220, .2);
 	border: none;
+
+	cursor: pointer;
 }
 
 .arrow--right .arrow-img {
