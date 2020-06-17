@@ -21,3 +21,81 @@ img {
 ul {
 	list-style: none;
 }
+
+.button {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: #000;
+	border: none;
+}
+
+.title-one {
+	font-family: "Montserrat", sans-serif;
+	font-size: 40px;
+	line-height: 44px;
+	color: #1e0606;
+	text-transform: uppercase;
+}
+
+.title-two {
+	font-family: "Montserrat", sans-serif;
+	font-size: 38px;
+	line-height: 46px;
+	color: #1e0606;
+	text-transform: uppercase;
+}
+
+.title-small {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #aaaaaa;
+}
+
+/* Header */
+
+.header-nav__link {
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: #1e0606;
+}
+
+.header-nav__link--bold {
+	font-weight: 700;
+}
+
+.button-search {
+	background-color: rgba(255, 255, 255, 1);
+	border: none;
+}
+
+/* footer */
+
+.footer {
+	background-color: #434343;
+}
+
+.footer-nav__link {
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+}
+
+.social-list__item {
+	background-color: #666;
+}
+
+.footer-bottom__text {
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+}
+
+.footer-bottom__text--gray {
+	color: #a2a2a2;
+}
