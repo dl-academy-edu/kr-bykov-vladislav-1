@@ -145,12 +145,12 @@ ul {
 	background-color: #434343;
 }
 
-.footer-nav__link {
-	font-size: 16px;
-	line-height: 22px;
-	color: #ffffff;
-}
-
 .social-list__item {
 	background-color: #666;
+}
+
+.stars-list__button {
+	background: none;
+	border: none;
+	cursor: pointer;
 }
