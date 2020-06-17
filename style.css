@@ -11,7 +11,7 @@
 	font-weight: 300;
 	font-size: 60px;
 	line-height: 73px;
-	color: rgba(30, 6, 6, 0.05);
+	color: rgba(30, 6, 6, .05);
 }
 
 .first-screen-toggle__button {
@@ -22,7 +22,7 @@
 }
 
 .first-screen-toggle__button.active {
-	background-color: rgba(30, 6, 6, 0.6);
+	background-color: rgba(30, 6, 6, .6);
 }
 
 .first-screen__text {
