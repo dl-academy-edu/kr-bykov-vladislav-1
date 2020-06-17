@@ -31,6 +31,8 @@ ul {
 
 	background-color: #000;
 	border: none;
+
+	cursor: pointer;
 }
 
 .title-one {
@@ -56,6 +58,20 @@ ul {
 	color: #aaaaaa;
 }
 
+.text {
+	font-size: 16px;
+	line-height: 22px;
+	color: #1e0606;
+}
+
+.text--white {
+	color: #fff;
+}
+
+.text--gray {
+	color: #a2a2a2;
+}
+
 /* Header */
 
 .header-nav__link {
@@ -72,6 +88,8 @@ ul {
 .button-search {
 	background-color: rgba(255, 255, 255, 1);
 	border: none;
+
+	cursor: pointer;
 }
 
 /* footer */
@@ -88,14 +106,4 @@ ul {
 
 .social-list__item {
 	background-color: #666;
-}
-
-.footer-bottom__text {
-	font-size: 16px;
-	line-height: 22px;
-	color: #ffffff;
-}
-
-.footer-bottom__text--gray {
-	color: #a2a2a2;
 }
