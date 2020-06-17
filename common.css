@@ -95,6 +95,20 @@ ul {
 	cursor: pointer;
 }
 
+/* breadcrumbs */
+
+.breadcrumbs__link {
+	font-family: "Crimson Text", serif;
+	font-size: 20px;
+	font-style: italic;
+	line-height: 25px;
+	color: #1e0606;
+}
+
+.breadcrumbs__link--gray {
+	opacity: .5;
+}
+
 /* footer */
 
 .footer {
