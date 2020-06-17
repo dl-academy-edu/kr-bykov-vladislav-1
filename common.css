@@ -109,6 +109,36 @@ ul {
 	opacity: .5;
 }
 
+/* page toggle */
+
+.page-toggle__link {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #1e0606;
+}
+
+.page-toggle__link.active {
+	color: #c29974;
+}
+
+.arrow {
+	background: none;
+	border: none;
+
+	cursor: pointer;
+}
+
+.arrow-img {
+	opacity: .12;
+}
+
+.arrow--right .arrow-img {
+	transform: rotate(180deg);
+}
+
 /* footer */
 
 .footer {
