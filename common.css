@@ -101,7 +101,7 @@ ul {
 /* header */
 
 .header {
-	margin: 50px 0 60px 0;
+	margin: 50px 0 0 0;
 }
 
 .header-content {
@@ -152,6 +152,10 @@ ul {
 	cursor: pointer;
 }
 
+.std-page {
+	margin: 60px 0 50px 0;
+}
+
 /* breadcrumbs */
 
 .breadcrumbs {
@@ -175,6 +179,10 @@ ul {
 }
 
 /* page toggle */
+
+.page-toggle {
+	margin: 50px 0 60px;
+}
 
 .page-toggle-content {
 	display: flex;
