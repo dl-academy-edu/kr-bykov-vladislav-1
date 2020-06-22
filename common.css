@@ -50,6 +50,8 @@ ul {
 /* text and titles */
 
 .title-one {
+	margin: 0 0 20px 0;
+
 	font-family: "Montserrat", sans-serif;
 	font-size: 40px;
 	line-height: 44px;

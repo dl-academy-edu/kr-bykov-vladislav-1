@@ -1,12 +1,20 @@
 @import "/font-name.css";
 
-/* first screen */
+/* slider */
 
-.first-screen {
+.slider-body {
+	display: flex;
+
 	background-color: #eee4db;
 }
 
-.first-screen__number {
+.slider-control {
+	margin: 17px 44px 0 28px;
+}
+
+.slider__number {
+	margin: 0;
+
 	font-family: "Montserrat", sans-serif;
 	font-weight: 300;
 	font-size: 60px;
@@ -14,18 +22,31 @@
 	color: rgba(30, 6, 6, .05);
 }
 
-.first-screen-toggle__button {
+.slider-toggle {
+	margin: 0;
+}
+
+.slider-toggle__button {
+	width: 31px;
+	height: 3px;
 	background-color: #d6cac2;
 	border: none;
 
 	cursor: pointer;
 }
 
-.first-screen-toggle__button.active {
+.slider-toggle__button.active {
 	background-color: rgba(30, 6, 6, .6);
 }
 
-.first-screen__text {
+.slider-info {
+	margin: 0 5px 0 0;
+
+	width: 307px;
+	align-self: center;
+}
+
+.slider__text {
 	font-family: "Crimson Text", serif;
 	font-size: 20px;
 	font-style: italic;
@@ -33,11 +54,15 @@
 	color: #1e0606;
 }
 
-.first-screen__bottom {
+.slider__add {
+	margin: 0;
+	padding: 11px 0;
+	
 	font-size: 12px;
 	font-weight: 700;
 	line-height: 16px;
 	text-transform: uppercase;
+	text-align: center;
 	color: #fff;
 
 	background-color: #c29974;
