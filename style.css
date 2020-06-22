@@ -214,13 +214,34 @@
 	justify-content: space-between;
 }
 
+/* more */
+
+.more {
+	margin: 90px 0 60px 0;
+}
+
+.more-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+
 /* widget */
 
 .widget {
+	width: 543px;
+	padding: 0 30px 35px 30px;
+
 	background-color: #e1f0f7;
 }
 
+.title--widget {
+	margin: 0 0 10px 0;
+}
+
 .widget__subtitle {
+	margin: 0 0 10px 0;
+
 	font-family: "Crimson Text", serif;
 	font-size: 26px;
 	font-weight: 400;
@@ -228,8 +249,27 @@
 	line-height: 32px;
 }
 
+.text--widget {
+	margin: 10px 0;
+}
+
+.button--widget {
+	margin: 20px 0;
+}
+
 /* map */
 
 .map {
+	width: 543px;
+	padding: 0 30px 35px 30px;
+
 	background-color: #e1f0f7;
+}
+
+.title--map {
+	margin: 0 0 20px 0;
+}
+
+.text--map {
+	margin: 20px 0;
 }
