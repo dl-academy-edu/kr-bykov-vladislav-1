@@ -263,6 +263,8 @@ ul {
 }
 
 .social-list {
+	margin: 25px 0;
+	
 	display: flex;
 }
 
