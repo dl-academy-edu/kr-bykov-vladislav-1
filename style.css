@@ -203,6 +203,17 @@
 	margin: 26px 0 26px 60px;
 }
 
+/* partners */
+
+.partners {
+	margin: 90px 0;
+}
+
+.partners-list {
+	display: flex;
+	justify-content: space-between;
+}
+
 /* widget */
 
 .widget {
