@@ -134,7 +134,7 @@ ul {
 }
 
 .info-bar__item {
-	margin: 0 0 0 20px;
+	margin: 0 0 0 15px;
 }
 
 .info-bar__link {
@@ -142,6 +142,7 @@ ul {
 	font-weight: 700;
 	line-height: 19px;
 	text-transform: uppercase;
+	letter-spacing: 0.5px;
 	color: #1e0606;
 }
 
