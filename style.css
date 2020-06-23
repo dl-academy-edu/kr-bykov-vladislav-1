@@ -46,7 +46,7 @@
 .slider-info {
 	margin: 0 5px 0 0;
 
-	width: 307px;
+	max-width: 307px;
 	align-self: center;
 }
 
@@ -83,12 +83,13 @@
 }
 
 .category-list {
+	margin: 0 -10px;
 	display: flex;
-	justify-content: space-between;
 }
 
 .category-list__item {
-	width: 24%;
+	width: 25%;
+	margin: 0 10px;
 }
 
 .category-list__item:nth-child(1) {
@@ -160,7 +161,11 @@
 }
 
 .delivery__img {
-	margin: 0 60px 0 0;
+	margin-right: 60px;
+}
+
+.delivery-info {
+	max-width: 530px;
 }
 
 .title--delivery {
@@ -229,7 +234,7 @@
 /* widget */
 
 .widget {
-	width: 543px;
+	max-width: 543px;
 	padding: 0 30px 35px 30px;
 
 	background-color: #e1f0f7;
@@ -260,7 +265,7 @@
 /* map */
 
 .map {
-	width: 543px;
+	max-width: 543px;
 	padding: 0 30px 35px 30px;
 
 	background-color: #e1f0f7;

@@ -237,17 +237,25 @@ ul {
 	background-color: #434343;
 }
 
+.footer-content {
+	margin: 0 -10px;
+}
+
 .footer-box {
 	padding: 0 0 13px 0;
 
 	display: flex;
-	justify-content: space-between;
 
 	border-bottom: 1px solid #666;
 }
 
+.footer__flex {
+	width: 33.33%;
+	padding: 0 10px;
+}
+
 .footer-nav {
-	width: 32.2%;
+	
 }
 
 .footer-nav-list {
@@ -256,14 +264,6 @@ ul {
 
 .footer-nav__item {
 	margin: 0 0 15px 0;
-}
-
-.footer-info {
-	width: 32.2%;
-}
-
-.connect {
-	width: 32.2%;
 }
 
 .connect-form {
@@ -295,8 +295,6 @@ ul {
 }
 
 .stars {
-	width: 32.2%;
-
 	display: flex;
 	align-items: center;
 }
@@ -324,14 +322,6 @@ ul {
 	border: none;
 
 	cursor: pointer;
-}
-
-.footer__copyright {
-	width: 32.2%;
-}
-
-.footer__design {
-	width: 32.2%;
 }
 
 /* popup */
