@@ -106,6 +106,7 @@ ul {
 
 .header-content {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 }
 
@@ -115,6 +116,7 @@ ul {
 
 .header-nav-list {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .header-nav__item {
@@ -130,7 +132,9 @@ ul {
 
 .info-bar {
 	margin-left: auto;
+
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .info-bar__item {

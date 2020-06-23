@@ -200,6 +200,7 @@
 
 .delivery-content {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .delivery__img {
@@ -258,6 +259,7 @@
 
 .partners-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -270,6 +272,7 @@
 
 .more-content {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: start;
 }
 
