@@ -1,6 +1,36 @@
 @import "/font-name.css";
 
+.filter {
+	background-color: rgba(125, 151, 218, 0.2);
+}
+
+.filter-form {
+	height: 254px;
+
+	display: flex;
+}
+
+.filter-result {
+	margin: 60px 0 50px 0;
+}
+
+.filter-result__list {
+	margin: 0 -10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.filter-result__item {
+	width: 33.33%;
+	margin-bottom: 44px;
+	padding: 0 10px;
+
+	text-align: center;
+}
+
 .filter-result__name {
+	margin: 27px 0 17px 0;
+
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 19px;
@@ -12,5 +42,10 @@
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 22px;
+	text-align: center;
 	color: #1e0606;
+}
+
+.page-toggle--filter {
+	margin-top: 27px;
 }
