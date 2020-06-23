@@ -256,29 +256,31 @@
 			</div>
 		</div>
 	</footer>
-	<form class="contact-us-form contact-us-form--main" action="#">
-		<label class="form__label">
-			Name
-			<input class="form__input" type="text" name="name">
-		</label>
-		<label class="form__label">
-			Phone
-			<input class="form__input" type="tel" name="tel">
-		</label>
-		<label class="form__label">
-			Email
-			<input class="form__input" type="email" name="email">
-		</label>
-		<label class="form__label">
-			Message
-			<textarea class="form__text" name="message" cols="30" rows="10"></textarea>
-		</label>
-		<label class="form__label">
-			<input class="form__input" type="checkbox" name="personal-data" value="yes">
-			By clicking on the button, you consent to the processing of your personal data
-		</label>
-		<button class="button" type="submit">Submit</button>
-		<button class="close"><img class="close__img" src="/img/icon-x.svg" alt="close popup"></button>
-	</form>
+	<div class="popup-bg">
+		<form class="contact-us-form contact-us-form--main" action="#">
+			<label class="form__label">
+				Name
+				<input class="form__input" type="text" name="name">
+			</label>
+			<label class="form__label">
+				Phone
+				<input class="form__input" type="tel" name="tel">
+			</label>
+			<label class="form__label">
+				Email
+				<input class="form__input" type="email" name="email">
+			</label>
+			<label class="form__label">
+				Message
+				<textarea class="form__text" name="message" cols="30" rows="10"></textarea>
+			</label>
+			<label class="form__label">
+				<input class="form__input" type="checkbox" name="personal-data" value="yes">
+				By clicking on the button, you consent to the processing of your personal data
+			</label>
+			<button class="button" type="submit">Submit</button>
+			<button class="close"></button>
+		</form>
+	</div>
 </body>
 </html>

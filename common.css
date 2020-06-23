@@ -346,6 +346,90 @@ ul {
 
 /* popup */
 
-.contact-us-form--main {
+.popup-bg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
 	display: none;
+
+	background-color: rgba(125, 151, 218, 0.8);
+}
+
+.contact-us-form {
+	position: relative;
+
+	max-width: 680px;
+	margin: auto;
+	padding: 42px 40px;
+
+	display: flex;
+	flex-direction: column;
+
+	font-family: "Roboto", sans-serif;
+
+	background-color: #e5eaf8;
+}
+
+.form__label {
+	font-size: 14px;
+	line-height: 16px;
+	color: #1e0606;
+}
+
+.form__input {
+	padding: 14px 20px;
+
+	font-size: 18px;
+	line-height: 21px;
+	color: #1e0606;
+
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form__text {
+	padding: 14px 20px;
+
+	font-size: 18px;
+	line-height: 21px;
+	color: #1e0606;
+
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.close {
+	position: absolute;
+	top: -3px;
+	right: -21px;
+
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+
+	cursor: pointer;
+}
+
+.close::before {
+	content: "";
+	position: absolute;
+
+	height: 15px;
+	width: 2px;
+	transform: rotate(45deg);
+
+	background-color: #fff;
+}
+
+.close::after {
+	content: "";
+	position: absolute;
+
+	height: 15px;
+	width: 2px;
+	transform: rotate(-45deg);
+
+	background-color: #fff;
 }
