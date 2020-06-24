@@ -1,5 +1,28 @@
 @import "/font-name.css";
 
+.category {
+	margin: 47px 0 59px 0;
+}
+
+.category-list {
+	margin: 0 -10px;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.category-list__item {
+	position: relative;
+
+	width: 280px;
+	height: 270px;
+	margin: 0 10px 23px 10px;
+}
+
+.category-list__item:nth-child(6n+4) {
+	margin-left: 210px;
+}
+
 .category-list__item:nth-child(1) {
 	background-color: #dbe4db;
 }
@@ -24,10 +47,42 @@
 	background-color: rgba(125, 151, 218, .2);
 }
 
+.category-list__link {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+}
+
+.category-list__img {
+	margin: auto;
+}
+
 .category-list__title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	margin: 0;
+
 	font-family: "Montserrat", sans-serif;
 	font-size: 26px;
 	line-height: 32px;
 	text-transform: uppercase;
+	text-align: center;
 	color: #fff;
+}
+
+.category-list__item:hover .category-list__title {
+	text-decoration: underline;
+}
+
+.category-info {
+	max-width: 680px;
+	margin: 28px 0 0 200px;
+}
+
+.title--category-info {
+	margin: 0 0 24px 0;
 }
