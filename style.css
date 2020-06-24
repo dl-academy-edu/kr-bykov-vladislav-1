@@ -110,12 +110,14 @@
 	margin: 0 -10px;
 
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .category-list__item {
 	position: relative;
 
-	width: 25%;
+	width: 280px;
 	height: 270px;
 	margin: 0 10px;
 }
