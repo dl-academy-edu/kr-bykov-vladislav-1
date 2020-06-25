@@ -343,6 +343,12 @@ ul {
 	border: none;
 }
 
+.connect-form__input::placeholder {
+	font-size: 16px;
+	line-height: 22px;
+	color: #ebebeb;
+}
+
 .connect-form__input:focus {
 	border: 1px solid #fffdfd;
 }
