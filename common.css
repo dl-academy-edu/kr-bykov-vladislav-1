@@ -63,7 +63,14 @@ ul {
 }
 
 .hidden {
-	display: none;
+  position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
 }
 
 /* text and titles */
@@ -442,9 +449,9 @@ ul {
 .contact-us-form {
 	position: relative;
 
-	max-width: 680px;
+	width: 680px;
 	margin: auto;
-	padding: 42px 40px;
+	padding: 22px 40px 43px 40px;
 
 	display: flex;
 	flex-direction: column;
@@ -454,13 +461,36 @@ ul {
 	background-color: #e5eaf8;
 }
 
-.form__label {
+.form-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-cell-100 {
+	width: 100%;
+}
+
+.form-cell-50 {
+	width: 290px;
+}
+
+.form-label {
+	margin-top: 20px;
+
+	display: block;
 	font-size: 14px;
 	line-height: 16px;
 	color: #1e0606;
 }
 
+.form-label__text {
+	margin-bottom: 6px;
+
+	display: block;
+}
+
 .form__input {
+	width: 100%;
 	padding: 14px 20px;
 
 	font-size: 18px;
@@ -468,18 +498,21 @@ ul {
 	color: #1e0606;
 
 	background-color: #fff;
-	border: 2px solid rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .form__input:focus {
-	border: 2px solid rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	outline: none;
 }
 
 .form__input:active {
-	border: 2px solid rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .form__text {
+	width: 100%;
+	min-height: 150px;
 	padding: 14px 20px;
 
 	font-size: 18px;
@@ -487,15 +520,54 @@ ul {
 	color: #1e0606;
 
 	background-color: #fff;
-	border: 2px solid rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .form__text:focus {
-	border: 2px solid rgba(0, 0, 0, 0.3)
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	outline: none;
 }
 
 .form__text:active {
-	border: 2px solid rgba(0, 0, 0, 0.2)
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form-label--checkbox {
+	display: flex;
+	align-items: center;
+}
+
+.form__checker {
+	position: absolute;
+
+	width: 19px;
+	height: 19px;
+
+	border: 2px solid #c29974;
+	border-radius: 3px;
+}
+
+.button--form {
+	max-width: 106px;
+	margin-top: 20px;
+
+	font-family: "Open Sans", sans-serif; 
+}
+
+.form__checkbox:checked ~ .form__checker::before {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	left: 1px;
+	
+	background-color: #c29974;
+
+	content: "";
+}
+
+.form-label__checkbox {
+	padding-left: 34px;
 }
 
 .close {
