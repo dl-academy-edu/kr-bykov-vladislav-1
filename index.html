@@ -51,7 +51,6 @@
 							<button class="button">Explore Now</button>
 						</div>
 						<img class="slider__img" src="/img/slider.png" alt="Toy">
-						<div class="slider-add"></div>
 					</div>
 					<p class="slider__add">Free (continental) USA shipping on all orders of $100 USD or more!</p>
 				</div>
@@ -89,8 +88,8 @@
 					</ul>
 					<div class="category-toggle">
 						<div class="category-toggle__arrows">
-							<button class="arrow arrow--left"><img class="arrow-img" src="/img/icon-arrow.svg" width="13" height="26" alt="Toggle Left"></button>
-							<button class="arrow arrow--right"><img class="arrow-img" src="/img/icon-arrow.svg" width="13" height="26" alt="Toggle Right"></button>
+							<button class="category__arrow category__arrow--left"><img class="category__arrow-img" src="/img/icon-arrow.svg" alt="Toggle Left"></button>
+							<button class="category__arrow category__arrow--right"><img class="category__arrow-img" src="/img/icon-arrow.svg" alt="Toggle Right"></button>
 						</div>
 						<p class="text text--category">Modern finds for the modern home. Curated goods by unique designers <br> around the world from fashion to furniture for kids and adults.</p>
 					</div>
@@ -151,30 +150,30 @@
 			</div>
 		</section>
 	</main>
-	<section class="more">
+	<div class="more">
 		<div class="container">
 			<div class="more-content">
-				<article class="widget">
+				<section class="widget">
 					<h2 class="title-two title--widget">Design Life Kids</h2>
 					<h3 class="widget__subtitle">About Us</h3>
 					<p class="text text--widget">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
 					<a class="button button--widget" href="#">Buy Now</a>
-				</article>
-				<article class="map">
+				</section>
+				<section class="map">
 					<h2 class="title-two title--map">Contacts</h2>
 					<p class="text text--map">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
 					<div class="map-item">
 						<img class="map-item__img" src="/img/map.jpg" alt="Map">
 					</div>
-				</article>
+				</section>
 			</div>
 		</div>
-	</section>
+	</div>
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-content">
 				<div class="footer-box">
-					<section class="footer-nav">
+					<section class="footer-nav footer__flex">
 						<h2 class="title-small">Navigation</h2>
 						<ul class="footer-nav-list">
 							<li class="footer-nav__item"><a class="text text--white" href="#">About Us</a></li>
@@ -185,7 +184,7 @@
 							<li class="footer-nav__item"><a class="text text--white" href="#">Shop By Designer</a></li>
 						</ul>
 					</section>
-					<section class="footer-info">
+					<section class="footer-info footer__flex">
 						<h2 class="title-small">Customer Information</h2>
 						<ul class="footer-nav-list">
 							<li class="footer-nav__item"><a class="text text--white" href="/pages/contact-us/index.html">Contact Us</a></li>
@@ -196,10 +195,10 @@
 							<li class="footer-nav__item"><a class="text text--white" href="#">Search</a></li>
 						</ul>
 					</section>
-					<section class="connect">
+					<section class="connect footer__flex">
 						<h2 class="title-small">Connect</h2>
 						<form class="connect-form" action="#">
-							<input class="connect-form__input" type="email" name="email">
+							<input class="connect-form__input" type="email" name="email" placeholder="Email">
 							<button class="button" type="submit">Join</button>
 						</form>
 						<ul class="social-list">
@@ -227,7 +226,7 @@
 					</section>
 				</div>
 				<div class="footer-bottom">
-					<div class="stars">
+					<div class="stars footer__flex">
 						<p class="text text--white text--stars">Company Rating</p>
 						<ul class="stars-list">
 							<li class="stars-list__item">
@@ -247,39 +246,52 @@
 							</li>
 						</ul>
 					</div>
-					<div class="footer__copyright">
+					<div class="footer__copyright footer__flex">
 						<p class="text text--white">Copyright © 2018 Dlk • Design Life Kids</p>
 					</div>
-					<div class="footer__design">
-						<p class="text text--gray">Web Design — Direct Line Development</p>
+					<div class="footer__design footer__flex">
+						<a href="#" class="text text--gray text--design">Web Design — Direct Line Development</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<form class="contact-us-form contact-us-form--main" action="#">
-		<label class="form__label">
-			Name
-			<input class="form__input" type="text" name="name">
-		</label>
-		<label class="form__label">
-			Phone
-			<input class="form__input" type="tel" name="tel">
-		</label>
-		<label class="form__label">
-			Email
-			<input class="form__input" type="email" name="email">
-		</label>
-		<label class="form__label">
-			Message
-			<textarea class="form__text" name="message" cols="30" rows="10"></textarea>
-		</label>
-		<label class="form__label">
-			<input class="form__input" type="checkbox" name="personal-data" value="yes">
-			By clicking on the button, you consent to the processing of your personal data
-		</label>
-		<button class="button" type="submit">Submit</button>
-		<button class="close"><img class="close__img" src="/img/icon-x.svg" alt="close popup"></button>
-	</form>
+	<div class="popup-bg">
+		<form class="contact-us-form contact-us-form--main" action="#">
+			<div class="form-row">
+				<div class="form-cell-100">
+					<label class="form-label">
+						<span class="form-label__text">Name</span>			
+						<input class="form__input" type="text" name="name">
+					</label>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-cell-50">
+					<label class="form-label">
+						<span class="form-label__text">Phone</span>	
+						<input class="form__input" type="tel" name="tel">
+					</label>
+				</div>
+				<div class="form-cell-50">
+					<label class="form-label">
+						<span class="form-label__text">Email</span>	
+						<input class="form__input" type="email" name="email">
+					</label>
+				</div>
+			</div>
+			<label class="form-label">
+				<span class="form-label__text">Message</span>	
+				<textarea class="form__text" name="message"></textarea>
+			</label>
+			<label class="form-label form-label--checkbox">
+				<input class="form__checkbox hidden" type="checkbox" name="personal-data" value="yes">
+				<span class="form__checker"></span>
+				<span class="form-label__checkbox">By clicking on the button, you consent to the processing of your personal data</span>	
+			</label>
+			<button class="button button--form" type="submit" disabled>Submit</button>
+			<button class="close"></button>
+		</form>
+	</div>
 </body>
 </html>

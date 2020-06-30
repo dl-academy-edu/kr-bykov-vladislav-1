@@ -1,6 +1,23 @@
 @import "/font-name.css";
 
+.blog-list {
+	margin: 0 -10px;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.blog-list__item {
+	width: 33.33%;
+	margin-bottom: 16px;
+	padding: 0 10px;
+}
+
 .blog-list__date {
+	margin-top: 17px;
+
+	display: block;
+
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	line-height: 19px;
@@ -8,14 +25,26 @@
 }
 
 .blog-list__title {
+	margin: 10px 0;
+
 	font-family: "Montserrat", sans-serif;
 	font-size: 24px;
 	line-height: 31px;
 	color: #1e0606;
 }
 
+.blog-list__title:hover {
+	text-decoration: underline;
+}
+
 .blog-list__text {
+	margin-top: 15px;
+
 	font-size: 18px;
 	line-height: 25px;
 	color: #1e0606;
+}
+
+.page-toggle--blog {
+	margin-top: 13px;
 }

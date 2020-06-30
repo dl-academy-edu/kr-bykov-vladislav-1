@@ -1,5 +1,27 @@
 @import "/font-name.css";
 
+.contact-us {
+	margin: 47px 0 60px 0;
+}
+
+.contact-us-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+
+.contact-us-form--page {
+	margin: 0;
+}
+
+.contact-us-info {
+	max-width: 380px;
+}
+
+.text--contact-us {
+	margin: 0 0 20px 0;
+}
+
 .contact-us-info__accent {
 	font-family: "Montserrat", sans-serif;
 	font-size: 26px;
