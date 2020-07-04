@@ -270,15 +270,6 @@ ul {
 	margin: 0 64px 0 0;
 }
 
-.page-toggle__item:last-child {
-	margin: 0;
-}
-
-.page-toggle__item:hover {
-	color: #1e0606;
-	opacity: .5;
-}
-
 .page-toggle__link {
 	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
@@ -292,17 +283,45 @@ ul {
 	color: #c29974;
 }
 
+.page-toggle__item:last-child {
+	margin: 0;
+}
+
+.page-toggle__item:hover {
+	opacity: .5;
+}
+
+.page-toggle__item:active {
+	opacity: .3;
+}
+
 .arrow {
 	padding: 0;
 	background: none;
 	border: none;
-	opacity: .12;
 
 	cursor: pointer;
+	outline: none;
 }
 
 .arrow--right .arrow-img {
 	transform: rotate(180deg);
+}
+
+.arrow-img path {
+	opacity: .12;
+}
+
+.arrow:hover .arrow-img path,
+.arrow:focus .arrow-img path {
+	stroke: #c29974;
+
+	opacity: 1;
+}
+.arrow:active .arrow-img path {
+	stroke: #c29974;
+
+	opacity: .5;
 }
 
 /* footer */
@@ -417,10 +436,6 @@ ul {
 	align-items: center;
 }
 
-.text--stars:hover {
-	color: #c29974;
-}
-
 .text--stars {
 	margin-right: 28px;
 }
@@ -447,6 +462,19 @@ ul {
 	border: none;
 
 	cursor: pointer;
+	outline: none;
+}
+
+.stars-list__button:hover .stars-list__img path {
+	fill: #836e5b;
+}
+
+.stars-list__button:focus .stars-list__img path {
+	fill: #836e5b;
+}
+
+.stars-list__button:active .stars-list__img path {
+	fill: #c29974;
 }
 
 .text--design {
@@ -469,7 +497,7 @@ ul {
 	bottom: 0;
 	left: 0;
 
-	display: none;
+	display: flex;
 
 	background-color: rgba(125, 151, 218, 0.8);
 }
@@ -582,6 +610,11 @@ ul {
 	font-family: "Open Sans", sans-serif; 
 }
 
+.form__checkbox:disabled ~ .form__checker,
+.form__checkbox:disabled ~ .form-label__checkbox{
+	opacity: 0.5;
+}
+
 .form__checkbox:checked ~ .form__checker::before {
 	position: absolute;
 	top: 0;
@@ -612,10 +645,18 @@ ul {
 	padding-left: 34px;
 }
 
+.form__checkbox:focus ~ .form-label__checkbox,
+.form-label__checkbox:hover {
+	text-decoration: underline;
+}
+
 .close {
 	position: absolute;
-	top: -3px;
+	top: -2px;
 	right: -21px;
+
+	width: 15px;
+	height: 15px;
 
 	background-color: rgba(0, 0, 0, 0);
 	border: none;
@@ -624,25 +665,31 @@ ul {
 }
 
 .close::before {
-	content: "";
 	position: absolute;
+	top: 0;
 
 	height: 15px;
 	width: 2px;
 	transform: rotate(45deg);
 
 	background-color: #fff;
+	border-radius: 25%;
+
+	content: "";
 }
 
 .close::after {
-	content: "";
 	position: absolute;
+	top: 0;
 
 	height: 15px;
 	width: 2px;
 	transform: rotate(-45deg);
 
 	background-color: #fff;
+	border-radius: 25%;
+
+	content: "";
 }
 
 .close:hover {
