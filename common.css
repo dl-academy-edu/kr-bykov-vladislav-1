@@ -213,6 +213,8 @@ ul {
 }
 
 .breadcrumbs__item {
+	position: relative;
+
 	margin: 0 48px 0 0;
 }
 
@@ -222,6 +224,23 @@ ul {
 	font-style: italic;
 	line-height: 25px;
 	color: #1e0606;
+}
+
+.breadcrumbs__item::after {
+	position: absolute;
+	top: 4px;
+	right: -30px;
+
+	height: 12px;
+	width: 8px;
+
+	background: url(/img/icon-arrow-small.svg) no-repeat;
+
+	content: "";
+}
+
+.breadcrumbs__item:last-child::after {
+	background: none;
 }
 
 .breadcrumbs__link--gray {
