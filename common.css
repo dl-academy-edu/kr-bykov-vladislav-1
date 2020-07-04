@@ -76,7 +76,7 @@ ul {
 /* text and titles */
 
 .title-one {
-	margin: 0 0 20px 0;
+	margin: 4px 0 19px 0;
 
 	font-family: "Montserrat", sans-serif;
 	font-size: 40px;
@@ -133,6 +133,8 @@ ul {
 
 .logo {
 	margin: 0 60px 0 0;
+
+	line-height: 0;
 }
 
 .logo:hover {
@@ -203,7 +205,7 @@ ul {
 }
 
 .std-page {
-	margin: 60px 0 47px 0;
+	margin: 63px 0 47px 0;
 }
 
 /* breadcrumbs */
@@ -574,7 +576,7 @@ ul {
 
 .button--form {
 	max-width: 106px;
-	margin-top: 20px;
+	margin-top: 21px;
 
 	font-family: "Open Sans", sans-serif; 
 }

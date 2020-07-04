@@ -3,7 +3,7 @@
 /* slider */
 
 .slider {
-	margin: 127px 0 90px 0;
+	margin: 128px 0 90px 0;
 }
 
 .slider-content {
@@ -63,23 +63,26 @@
 
 .slider-info {
 	max-width: 307px;
-	margin: 90px 0 88px 133px;
+	margin: 89px 0 89px 133px;
 
 	align-self: center;
 }
 
 .slider__text {
+	margin: 19px 0;
+
 	font-family: "Crimson Text", serif;
-	font-size: 20px;
+	font-size: 19px;
 	font-style: italic;
 	line-height: 25px;
+	letter-spacing: 0.4px;
 	color: #1e0606;
 }
 
 .slider__img {
 	position: absolute;
 	right: 100px;
-	bottom: 38px;
+	bottom: 39px;
 }
 
 .slider__add {
