@@ -40,6 +40,8 @@
 	margin-right: 94px;
 }
 
+/* cost */
+
 .filter-form__range {
 	-webkit-appearance: none;
 
@@ -49,6 +51,10 @@
 
 	background-color: rgba(0, 0, 0, 0.5);
 	outline: none;
+}
+
+.filter-form__range:focus {
+	background-color: #c29974;
 }
 
 .filter-form__range::-webkit-slider-thumb {
@@ -62,10 +68,16 @@
 	border-radius: 50%;
 }
 
+.filter-form__range::-webkit-slider-thumb:active {
+	opacity: .9;
+}
+
 .filter-form__range-box {
 	display: flex;
 	justify-content: space-between;
 }
+
+/* color */
 
 .filter-form__field--color {
 	margin-right: 124px;
@@ -83,6 +95,11 @@
 
 	border: 2px solid #c29974;
 	border-radius: 3px;
+}
+
+.filter-form__checkbox:disabled ~ .filter-form__checkbox-checker,
+.filter-form__checkbox:disabled ~ .filter-form__text{
+	opacity: 0.5;
 }
 
 .filter-form__checkbox:checked ~ .filter-form__checkbox-checker::before {
@@ -114,6 +131,13 @@
 	padding-left: 29px;
 }
 
+.filter-form__checkbox:focus ~ .filter-form__text,
+.filter-form__text--checkbox:hover {
+	text-decoration: underline;
+}
+
+/* delivery */
+
 .filter-form__field--delivery {
 	margin-right: 69px;
 }
@@ -132,8 +156,9 @@
 	border-radius: 50%;
 }
 
-.filter-form__text--radio {
-	padding-left: 30px;
+.filter-form__radio:disabled ~ .filter-form__radio-checker,
+.filter-form__radio:disabled ~ .filter-form__text{
+	opacity: 0.5;
 }
 
 .filter-form__radio:checked ~ .filter-form__radio-checker::before {
@@ -148,6 +173,17 @@
 
 	content: "";
 }
+
+.filter-form__text--radio {
+	padding-left: 30px;
+}
+
+.filter-form__radio:focus ~ .filter-form__text,
+.filter-form__text--radio:hover {
+	text-decoration: underline;
+}
+
+/* amount */
 
 .filter-form__field--choice {
 	margin-right: 61px;
@@ -167,12 +203,26 @@
 	background-color: #fff;
 }
 
-.filter-form__choice-button .filter-form__choice:checked + .filter-form__label--choice {
+.filter-form__choice-button .filter-form__choice:checked + .filter-form__label {
 	background-color: #f3d0db;
 }
 
+.filter-form__choice-button .filter-form__choice:hover + .filter-form__label {
+	background-color: #f3d0db;
+	text-decoration: underline;
+}
+
+.filter-form__choice-button .filter-form__choice:active + .filter-form__label {
+	background-color: #f3d0db;
+	opacity: .5;
+}
+
+.filter-form__choice-button .filter-form__choice:focus + .filter-form__label {
+	text-decoration: underline;
+}
+
 .button--filter__form {
-	margin-top: 37px;
+	margin-top: 36px;
 }
 
 .filter-result {
