@@ -5,7 +5,7 @@
 }
 
 .filter-form {
-	padding: 42px 0 27px 0;
+	padding: 43px 0 26px 0;
 
 	display: flex;
 	align-items: start;
@@ -87,13 +87,26 @@
 
 .filter-form__checkbox:checked ~ .filter-form__checkbox-checker::before {
 	position: absolute;
-	top: 1px;
-	right: 1px;
-	bottom: 1px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	background-color: #fff;
+
+	content: "";
+}
+
+.filter-form__checkbox:checked ~ .filter-form__checkbox-checker::after {
+	position: absolute;
+	top: -2px;
 	left: 1px;
 
-	background-color: #c29974;
+	width: 15px;
+	height: 15px;
 
+	background-image: url(/img/icon-check.svg);
+	
 	content: "";
 }
 

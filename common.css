@@ -205,7 +205,7 @@ ul {
 }
 
 .std-page {
-	margin: 63px 0 47px 0;
+	margin: 63px 0 48px 0;
 }
 
 /* breadcrumbs */
@@ -583,12 +583,26 @@ ul {
 
 .form__checkbox:checked ~ .form__checker::before {
 	position: absolute;
-	top: 1px;
-	right: 1px;
-	bottom: 1px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	background-color: #fff;
+
+	content: "";
+}
+
+.form__checkbox:checked ~ .form__checker::after {
+	position: absolute;
+
+	width: 15px;
+	height: 15px;
+
+	top: -2px;
 	left: 1px;
-	
-	background-color: #c29974;
+
+	background-image: url(/img/icon-check.svg);
 
 	content: "";
 }
