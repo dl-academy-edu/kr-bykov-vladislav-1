@@ -243,6 +243,47 @@
 	text-align: center;
 }
 
+.filter-result__link {
+	position: relative;
+
+	display: block;
+}
+
+.filter-result__item:hover .filter-result-hover {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 54%;
+	height: 54%;
+
+	display: flex;
+
+	background-color: rgba(229, 234, 248, .9);
+}
+
+.filter-result__item:active .filter-result-hover {
+	background-color: rgba(229, 234, 248, .67);
+}
+
+.filter-result-hover__text {
+	display: none;
+
+	margin: auto;
+
+	font-family: "Montserrat", sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 29px;
+	text-transform: uppercase;
+	color: #1e0606;
+}
+
+.filter-result__item:hover .filter-result-hover__text {
+	display: block;
+}
+
 .filter-result__name {
 	margin: 27px 0 17px 0;
 
