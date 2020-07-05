@@ -45,6 +45,7 @@ ul {
 	background-color: #000;
 	border: none;
 
+	outline: none;
 	cursor: pointer;
 }
 
@@ -382,6 +383,8 @@ ul {
 
 	background-color: #666;
 	border: none;
+
+	outline: none;
 }
 
 .connect-form__input::placeholder {
@@ -444,6 +447,10 @@ ul {
 	margin: 0;
 
 	display: flex;
+}
+
+.stars:hover .text--stars {
+	color: #c29974;
 }
 
 .footer-bottom {
