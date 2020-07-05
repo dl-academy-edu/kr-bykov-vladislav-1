@@ -509,6 +509,10 @@ ul {
 	background-color: rgba(125, 151, 218, 0.8);
 }
 
+.popup_open {
+	display: flex;
+}
+
 .contact-us-form {
 	position: relative;
 
