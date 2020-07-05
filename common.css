@@ -660,7 +660,7 @@ ul {
 .close {
 	position: absolute;
 	top: -2px;
-	right: -21px;
+	right: -24px;
 
 	width: 15px;
 	height: 15px;
@@ -675,8 +675,8 @@ ul {
 	position: absolute;
 	top: 0;
 
-	height: 15px;
-	width: 2px;
+	height: 20px;
+	width: 3px;
 	transform: rotate(45deg);
 
 	background-color: #fff;
@@ -689,8 +689,8 @@ ul {
 	position: absolute;
 	top: 0;
 
-	height: 15px;
-	width: 2px;
+	height: 20px;
+	width: 3px;
 	transform: rotate(-45deg);
 
 	background-color: #fff;
