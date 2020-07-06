@@ -16,5 +16,5 @@ modalClose.addEventListener('click', function() {
 window.addEventListener('keydown', function(e) {
 	if (e.code === 'Escape' && popup.classList.contains('popup_open')) {
 		popup.classList.remove('popup_open');
-	}
+	};
 });

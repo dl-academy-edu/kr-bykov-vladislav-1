@@ -186,11 +186,13 @@
 /* amount */
 
 .filter-form__field--choice {
+	max-width: 240px;
 	margin-right: 61px;
 }
 
 .filter-form__list--choice {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .filter-form__label--choice {
@@ -201,6 +203,10 @@
 	text-align: center;
 
 	background-color: #fff;
+}
+
+.filter-form__choice-button {
+	margin-bottom: 10px;
 }
 
 .filter-form__choice-button .filter-form__choice:checked + .filter-form__label {

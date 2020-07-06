@@ -238,6 +238,7 @@ ul {
 
 .breadcrumbs {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .breadcrumbs__item {
@@ -296,6 +297,7 @@ ul {
 
 .page-toggle__list {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .page-toggle__item {
@@ -511,13 +513,14 @@ ul {
 
 .social-list {
 	display: flex;
-	margin: 25px 0;
+	flex-wrap: wrap;
+	margin: 25px 0 25px 2px;
 }
 
 .social-list__item {
 	width: 30px;
 	height: 30px;
-	margin: 0 10px 0 0;
+	margin: 0 10px 10px 0;
 	padding: 0;
 
 	background-color: #666;
@@ -558,6 +561,7 @@ ul {
 
 .stars-list {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 }
 
@@ -643,6 +647,7 @@ ul {
 
 .form-row {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 

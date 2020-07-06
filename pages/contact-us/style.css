@@ -23,6 +23,9 @@
 }
 
 .contact-us-info__accent {
+	display: block;
+	margin: 20px 0;
+	
 	font-family: "Montserrat", "Arial", sans-serif;
 	font-size: 26px;
 	font-weight: 600;

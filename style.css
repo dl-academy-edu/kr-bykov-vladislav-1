@@ -292,8 +292,6 @@
 /* map */
 
 .map {
-	position: relative;
-
 	max-width: 543px;
 	margin-top: 26px;
 	padding: 0 30px 82px 30px;
@@ -310,5 +308,11 @@
 }
 
 .map-item {
+	position: relative;
+	
+	margin-top: 20px;
+}
+
+.map-item__img {
 	position: absolute;
 }
