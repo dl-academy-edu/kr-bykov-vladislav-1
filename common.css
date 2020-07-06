@@ -1,5 +1,5 @@
 body {
-	font-family: "Open Sans", sans-serif; 
+	font-family: "Open Sans", "Arial", sans-serif; 
 }
 
 a {
@@ -80,7 +80,7 @@ ul {
 .title-one {
 	margin: 4px 0 19px 0;
 
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Arial", sans-serif;
 	font-size: 40px;
 	line-height: 44px;
 	color: #1e0606;
@@ -88,7 +88,7 @@ ul {
 }
 
 .title-two {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Arial", sans-serif;
 	font-size: 38px;
 	line-height: 46px;
 	color: #1e0606;
@@ -245,7 +245,7 @@ ul {
 }
 
 .breadcrumbs__link {
-	font-family: "Crimson Text", serif;
+	font-family: "Crimson Text", "Georgia", serif;
 	font-size: 20px;
 	font-style: italic;
 	line-height: 25px;
@@ -301,7 +301,7 @@ ul {
 }
 
 .page-toggle__link {
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 20px;
@@ -423,7 +423,7 @@ ul {
 
 	margin: 0;
 
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Arial", sans-serif;
 	font-size: 26px;
 	line-height: 32px;
 	text-transform: uppercase;
@@ -645,7 +645,7 @@ ul {
 	display: flex;
 	flex-direction: column;
 
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 
 	background-color: #e5eaf8;
 }
@@ -740,7 +740,7 @@ ul {
 	max-width: 106px;
 	margin-top: 21px;
 
-	font-family: "Open Sans", sans-serif; 
+	font-family: "Open Sans", "Arial", sans-serif; 
 }
 
 .form__checkbox:disabled ~ .form__checker,
