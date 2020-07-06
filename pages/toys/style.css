@@ -247,9 +247,12 @@
 	position: relative;
 
 	display: block;
+
+	outline: none;
 }
 
-.filter-result__item:hover .filter-result-hover {
+.filter-result__item:hover .filter-result-hover,
+.filter-result__link:focus .filter-result-hover {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -280,7 +283,8 @@
 	color: #1e0606;
 }
 
-.filter-result__item:hover .filter-result-hover__text {
+.filter-result__item:hover .filter-result-hover__text,
+.filter-result__link:focus .filter-result-hover__text {
 	display: block;
 }
 
