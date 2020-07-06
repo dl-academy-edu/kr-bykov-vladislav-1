@@ -49,8 +49,8 @@
 
 	background-color: #d6cac2;
 	border: none;
-
 	outline: none;
+
 	cursor: pointer;
 }
 
@@ -64,10 +64,9 @@
 }
 
 .slider-info {
+	align-self: center;
 	max-width: 307px;
 	margin: 89px 0 89px 133px;
-
-	align-self: center;
 }
 
 .slider__text {
@@ -94,8 +93,8 @@
 	font-size: 12px;
 	font-weight: 700;
 	line-height: 16px;
-	text-transform: uppercase;
 	text-align: center;
+	text-transform: uppercase;
 	color: #fff;
 
 	background-color: #c29974;
@@ -106,10 +105,9 @@
 }
 
 .category-toggle {
-	margin: 7px 0 30px 0;
-
 	display: flex;
 	align-items: center;
+	margin: 7px 0 30px 0;
 }
 
 .category-toggle__arrows {
@@ -122,8 +120,8 @@
 
 	background-color:rgba(112, 187, 220, .2);
 	border: none;
-
 	outline: none;
+
 	cursor: pointer;
 }
 
@@ -189,8 +187,8 @@
 
 	background-color: rgba(255, 255, 255, 1);
 	border: none;
-
 	outline: none;
+
 	cursor: pointer;
 }
 
