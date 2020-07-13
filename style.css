@@ -143,6 +143,7 @@
 }
 
 .category-toggle .text {
+	max-width: 580px;
 	margin: 0;
 }
 
@@ -203,6 +204,9 @@
 	font-weight: 700;
 
 	background-color: rgba(112, 187, 220, .2);
+
+	cursor: default;
+	pointer-events: none;
 }
 
 .text--delivery {

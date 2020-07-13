@@ -281,6 +281,9 @@ ul {
 
 .breadcrumbs__link--gray {
 	opacity: .5;
+
+	cursor: default;
+	pointer-events: none;
 }
 
 /* page toggle */
@@ -685,7 +688,8 @@ ul {
 	border: 1px solid rgba(0, 0, 0, .2);
 }
 
-.form__input:focus {
+.form__input:focus,
+.form__input:hover {
 	border: 1px solid rgba(0, 0, 0, .3);
 	outline: none;
 }
@@ -707,7 +711,8 @@ ul {
 	border: 1px solid rgba(0, 0, 0, .2);
 }
 
-.form__text:focus {
+.form__text:focus,
+.form__text:hover {
 	border: 1px solid rgba(0, 0, 0, .3);
 	outline: none;
 }
