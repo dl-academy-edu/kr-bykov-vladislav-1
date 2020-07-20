@@ -1,10 +1,9 @@
-@import "/font-name.css";
+@import "/css/font-name.css";
 
 .blog-list {
-	margin: 0 -10px;
-
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0 -10px;
 }
 
 .blog-list__item {
@@ -13,12 +12,19 @@
 	padding: 0 10px;
 }
 
+.blog-list__link {
+	outline: none;
+}
+
+.blog-list__link:focus .blog-list__title {
+	text-decoration: underline;
+}
+
 .blog-list__date {
+	display: block;
 	margin-top: 17px;
 
-	display: block;
-
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 19px;
 	color: #818181;
@@ -27,7 +33,7 @@
 .blog-list__title {
 	margin: 10px 0;
 
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", "Arial", sans-serif;
 	font-size: 24px;
 	line-height: 31px;
 	color: #1e0606;
